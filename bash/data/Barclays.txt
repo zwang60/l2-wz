@@ -1,0 +1,49 @@
+====================================================================
+Client: Barclays
+Candidate: Wilson Wang
+Date: 9/30/2015
+Interview Type: Phone
+1. What is the difference between native CSS and SASS ?
+2. Any experience about using JSP and JSTL and talk about that ?
+3. How did u validate ur code ?
+4. How did u use Karma how to config ?
+5. How to add a new <li> after 3 existed <li> within a <ul> using jquery ?
+6. How to achieve the click the new <li> you added let the second <li> hide ? 
+7. Do u know REST and what is it ?
+8. What is the REST url looks like ?
+9. How do u handle the security issue using REST ?
+10. What is the difference between backbone.js and angular.js ?
+11. How to achieve the module pattern in JavaScript ?
+12. How to do the responsive design and what u need to care about the design in cell-phone layout ?
+13. What is pesudo-class in CSS ?
+14. What is continuous development ?
+
+=======================================================================
+Client: Barclays
+Candidate: Kody
+Type: Phone
+Date: 09/28/2015
+
+1. when is it scheduled to be live?
+2. what tech you used for this app?
+3. why you prefer angular js?
+4. have you used external test module?
+5. Why you use qunit test?
+6. what you tested already?
+7. did you use any other js?
+8. complaint with ie 8, what you use to make js compatible
+9. do you any specific thing for crossing browser
+10. why you use native js rather than jquery
+11. are you familar with prototype?
+12. example why you use prototype
+13. have you used jquery a lot before
+14. can you tell me, if you want to select by class, how can I go through the array?
+15. what are elements are added to HTML
+16. what browser that cut off the html feature
+17. do you have any issue with IE browser
+18. did you do a lot of CSS?
+19. Are you familiar with CSS? pseudo class / class
+20. first selected by id, and then selected class. which css attribute will be applied
+21. Have you used sass
+22. Are you familiar with modular pattern?
+23. How to make a class public/private 
