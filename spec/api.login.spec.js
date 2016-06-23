@@ -10,6 +10,19 @@ describe('test login api', function() {
         return cookie;
     }
 
+    var login = function(usr) {
+        return new Promise(function(resolve, reject) {
+            request.post({
+                url: url,
+                body: usr,
+                json: true,
+            }, function(err, response, body) {
+                if (err) reject(err);
+                else resolve(body);
+            });
+        });
+    }
+
     beforeEach(function(done) {
         mongodb.MongoClient.connect('mongodb://localhost/l2').then(function(db) {
                 return db.dropCollection('users')
@@ -43,16 +56,15 @@ describe('test login api', function() {
         //1. post login
         //2. get cookie
         //3. get login
-        request.post({
-            url: url,
-            body: JSON.stringify({
-                usr: 'xyz',
-                pwd: 'xyz'
-            })
-        }, function(err, response, body) {
-            expect(JSON.parse(body)).toEqual({
+        login({
+            usr: 'xyz',
+            pwd: 'xyz'
+        }).then(function(body) {
+            expect(body).toEqual({
                 usr: 'xyz'
             });
-        });
+        }), function(err) {
+            expect(err).toBeNull();
+        }.then(done).catch(console.log))
     })
 });
